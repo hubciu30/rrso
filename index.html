@@ -1,0 +1,97 @@
+<!doctype html>
+
+<html lang="pl">
+  <head>
+    <title>Huba</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Rodzinny serwis internetowy">
+    <meta name="author" content="Hubert">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src = "js/jquery-3.4.1.min.js"></script>
+    <script src = "js/bootstrap.min.js"></script>
+  </head>
+
+  <body style = "background-color: #585858;">
+    <header>
+      <nav class = "navbar navbar-inverse  bg-dark navbar-expand-md navbar-dark ">
+        <div class = "container-fluid">
+          <div class = "navbar-header text-light">
+              <span>Hubert Koloska</span>
+          </div>
+          <div class = "mr-2">
+
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">   
+        
+        <div id = "main_logowanie" class = "row rounded main_content"> 
+          <div class = "col-12 text-center text-light">
+            <div class = "form-group ">
+              
+              <div class = "mb-3">
+                <label><h2>Bezpieczna gotówka</h2></label>
+              </div>
+
+              <label>Kwota</label>
+              <div class = "input-group-prepend mb-3">
+                <input id = "kwota" class = "form-control text-center" type = "text"></input>
+              </div>
+            
+              <label>Ilość miesięcy</label>
+              <div class = "input-group-prepend mb-3">
+                <input id = "miesiac" class = "form-control text-center" type = "text"></input>
+              </div>  
+              
+              <label>Oprocentowanie</label>
+              <div class = "input-group-prepend mb-3">
+                <input id = "oprocentowanie" class = "form-control text-center" type = "text"></input>
+              </div>
+              <label>Prowizja</label>
+              <div class = "input-group-prepend mb-3">
+                <input id = "prowizja" class = "form-control text-center" type = "text"></input>
+              </div>
+
+              <label>Koszt dodatkowy</label>
+              <div class = "input-group-prepend mb-3">
+                <input id = "premium" class = "form-control text-center" type = "text"></input>
+              </div>
+
+              <div class = " mb3">
+                <button type = "button" class = "btn btn-danger" onclick="Licz();">Oblicz</button>
+              </div>
+                  
+            </div>     
+          </div>
+        </div>
+
+        <div id = "main_Wyniki" class = "row rounded main_content"> 
+          <div class = "col-12 text-center text-light">
+            <div class = "form-group ">
+              
+              <div class = "mb-3">
+                <label><h2>Wyniki</h2></label>
+              </div>
+              <label>Rata Kredytu:</label>
+              <div class = "input-group-prepend mb-3"><span id="wynik0">xd</span></div>
+              <label>Całkowita Kwota Kredytu:</label>
+              <div class = "input-group-prepend mb-3"><span id="wynik1">xd</span></div>
+              <label>RRSO:</label>
+              <div class = "input-group-prepend mb-3"><span id="wynik2">xd</span></div>
+            </div>     
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
