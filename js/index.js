@@ -19,7 +19,7 @@ function Calculate(data)
     let tmp_kwota = rata * data.Miesiac + (data.Kwota * (data.Prowizja/100));
 
     let ckk = Math.round(tmp_kwota - data.Kwota);
-    let Kwota_Splaty_Kredytu = tmp_kwota + ckk + data.Dodatkowe;
+    let Kwota_Splaty_Kredytu = tmp_kwota + ckk + (data.Dodatkowe/data.Miesiac);
    // let RRSO = (((1 + tmp_kwota + data.Dodatkowe)/data.Kwota) - 1 ) * 100;
     let RRSO = (Math.pow(Kwota_Splaty_Kredytu/data.Kwota,12/data.Miesiac) - 1) * 100;
     RRSO = Math.round((RRSO + Number.EPSILON) * 100) / 100
